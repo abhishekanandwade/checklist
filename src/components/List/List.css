@@ -1,0 +1,54 @@
+.list{
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+    background-color: rgb(22,23,29);
+    border: 5px solid rgb(41,42,50);
+    border-radius: 20px;
+    justify-content: start;
+    align-items: center;
+    width: 50%;
+
+
+}
+
+.checkbox {
+    margin: 10px;
+    border-radius: 5px;
+    width: 40px;
+    height: 30px;
+    cursor: pointer;
+    background-color: rgb(22,23,29);
+    border: 3px solid rgb(60,213,249);
+    -webkit-appearance: none;
+    appearance: none;
+    position: relative;
+}
+
+.checkbox:checked::before {
+    content: "";
+    position: absolute;
+    width: 13px; /* Make the checkmark smaller */
+    height: 5px; /* Make the checkmark smaller */
+    border-bottom: 3px solid black; /* Make the checkmark thicker */
+    border-left: 3px solid black; /* Make the checkmark thicker */
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%, -50%) rotate(305deg);
+}
+
+.checkbox:checked {
+    background-color: rgb(60,213,249); /* Change background color when checked */
+}
+
+
+
+.text {
+    border: none;
+    outline: none;
+    width: 83.5%;
+    padding: 10px;
+    background-color: rgb(22,23,29);
+    color: white;
+    font-size: 20px;
+}

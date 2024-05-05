@@ -1,7 +1,7 @@
 .home {
     display: flex;
     flex-direction: column;
-    justify-content: center; 
+    justify-content: start; 
     align-items: center;
     background-color: rgb(22,23,29);
     height: 100vh;
@@ -17,6 +17,7 @@
     justify-content: start;
     align-items: center;
     width: 50%;
+    margin-top: 50px;
 }
 
 .input p {
@@ -42,3 +43,44 @@
     font-size: 20px;
 }
 
+.list-item{
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    width:calc(50% + 10px);
+    gap : 5px;
+    overflow-y: auto;
+    padding-right: 10px;
+
+}
+
+
+/* .list-item::-webkit-scrollbar {
+    display: none;
+}
+
+.list-item {
+    -ms-overflow-style: none;  
+    scrollbar-width: none;  
+} */
+
+/* Styling scrollbar for Chrome, Safari and Opera */
+.list-item::-webkit-scrollbar {
+    width: 5px;
+}
+
+.list-item::-webkit-scrollbar-track {
+    background: rgb(22,23,29);
+}
+
+.list-item::-webkit-scrollbar-thumb {
+    background: #575656;
+    border-radius: 10px;
+}
+
+.list-item::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
+
+/* Styling scrollbar for IE, Edge and Firefox is not fully supported */
